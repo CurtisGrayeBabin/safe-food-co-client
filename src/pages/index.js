@@ -1,20 +1,20 @@
 import * as React from 'react'
 import Layout from '../components/layout'
+import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home">
-      <h1>Who we are:</h1>
-      <ul>
-        <li>Certified: Certified Instructor and Proctor for ServSafe</li>
-        <li>Professional: Certified Executive Chef (ACF certified)</li>
-        <li>Experienced: Instructed ServSafe courses at the college level for 6 years</li>
-      </ul>
+    <Layout pageTitle='Home'>
+      <h1>Food-Safe Solutions</h1>
+      
+      <h2>ServSafe exam proctoring</h2>
+      <h2>Proctoring for up to 5 people at a time</h2>
+      <h2>$100 per person</h2>
 
-      <h1>What we offer:</h1>
-      <ul>
-        <li>ServSafe exam proctoring for up to 5 people at a time for $100 per person</li>
-      </ul>
+      <StaticImage src='../images/afc_badge.png' alt='ACF badge image' width={200}/>
+      <StaticImage src='../images/servsafe_logo.png' alt='ServSafe logo image' width={300}/>
+  
+
     </Layout>
   )
 }

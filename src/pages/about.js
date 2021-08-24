@@ -3,8 +3,8 @@ import Layout from '../components/layout'
 
 const AboutPage = () => {
   return (
-    <Layout pageTitle="About">
-      <h1>Who we are:</h1>
+    <Layout pageTitle='About'>
+      <h1>About us:</h1>
       <ul>
         <li>Certified: Certified Instructor and Proctor for ServSafe</li>
         <li>Professional: Certified Executive Chef (ACF certified)</li>

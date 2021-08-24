@@ -1,14 +1,28 @@
 .container {
     margin: auto;
-    max-width: 500px;
+    max-width: 50%;
     font-family: sans-serif;
   }
   
   .heading {
-    color: rebeccapurple;
+    color: #5b98f7;
   }
+
+  .navbar {
+    background-color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 40px 0;
+}
+
+
   .nav-links {
     display: flex;
+    justify-content: center;
     list-style: none;
     padding-left: 0;
   }

@@ -4,6 +4,9 @@ module.exports = {
     title: "Safe Food Co Client",
   },
   plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     "gatsby-plugin-react-helmet",
   ],
 };
