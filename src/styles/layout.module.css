@@ -1,34 +1,36 @@
 .container {
-    margin: auto;
-    max-width: 50%;
-    font-family: sans-serif;
-  }
+  margin: auto;
+  max-width: 80%;
+  font-family: sans-serif;
+  text-align: center;
+}
   
-  .heading {
-    color: #5b98f7;
-  }
+.heading {
+  color: #5b98f7;
+}
 
-  .navbar {
-    background-color: white;
-    text-align: center;
-    font-family: sans-serif;
+.navbar {
+  background-color: white;
+  text-align: center;
+  font-family: sans-serif;
 }
 
 .navbar ul {
-    margin: 0;
-    padding: 40px 0;
+  margin: auto;
+  padding: 40px 0;
 }
 
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+}
 
-  .nav-links {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding-left: 0;
-  }
-  .nav-link-item {
-    padding-right: 2rem;
-  }
-  .nav-link-text {
-    color: black;
-  }
+.nav-link-item {
+  padding: 0 2rem;
+}
+
+.nav-link-text {
+  color: black;
+}
