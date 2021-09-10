@@ -15,7 +15,17 @@ const IndexPage = () => {
       <h2>for $100 per person</h2>
       <StaticImage src='../images/afc_badge.png' alt='ACF badge image' width={200}/>
   
-      
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
 
     </Layout>
   )

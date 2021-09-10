@@ -4,7 +4,7 @@ import {
   container,
   navLinks,
   navLinkItem,
-  navLinkText,
+  navLink,
   navbar
 } from '../styles/layout.module.css'
 import Headroom from 'react-headroom'
@@ -17,19 +17,13 @@ const Layout = ({ pageTitle, children }) => {
             <nav className={navbar}>
                 <ul className={navLinks}>
                     <li className={navLinkItem}>
-                        <Link to="/" className={navLinkText}>
-                        Home
-                        </Link>
+                        <Link to="/" className={navLink}>Home</Link>
                     </li>
                     <li className={navLinkItem}>
-                        <Link to="/about" className={navLinkText}>
-                        About
-                        </Link>
+                        <Link to="/about" className={navLink}>About</Link>
                     </li>
                     <li className={navLinkItem}>
-                        <Link to="/contact" className={navLinkText}>
-                        Contact
-                        </Link>
+                        <Link to="/contact" className={navLink}>Contact</Link>
                     </li>
                 </ul>
             </nav>
