@@ -18,7 +18,7 @@
 
 .navbar ul {
   margin: auto;
-  padding: 40px;
+  padding: 20px;
 }
 
 .nav-links {
@@ -35,5 +35,6 @@
 
 /* Home, About, Contact links */
 .nav-link {
-  @apply transition duration-500 ease-in-out bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md;
+  display: inline-block;
+  @apply transform hover:scale-105 hover:bg-blue-700 transition duration-500 ease-in-out bg-blue-500 text-white font-bold py-2 px-4 rounded-md;
 }

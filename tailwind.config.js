@@ -15,7 +15,7 @@ module.exports = {
       transform: ['motion-safe','hover', 'focus'],
       animation: ['motion-safe'],
       transitionTimingFunction: ['hover', 'focus'],
-      scale: ['active', 'group-hover'],
+      scale: ['active', 'group-hover', 'hover'],
     },
   },
   plugins: [],
