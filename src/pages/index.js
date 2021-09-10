@@ -26,6 +26,15 @@ const IndexPage = () => {
       <p>a</p>
       <p>a</p>
       <p>a</p>
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
+      <p>a</p>
 
     </Layout>
   )
