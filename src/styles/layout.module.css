@@ -18,7 +18,8 @@
 
 .navbar ul {
   margin: auto;
-  padding: 20px;
+  padding: 0px;
+  @apply bg-blue-500;
 }
 
 .nav-links {
@@ -28,13 +29,18 @@
   padding-left: 0;
 }
 
-/* Link padding */
+/* Horizontal link padding */
 .nav-link-item {
-  padding: 0 1rem;
+  //padding: 0 1rem;
 }
 
 /* Home, About, Contact links */
 .nav-link {
   display: inline-block;
-  @apply transform hover:scale-105 hover:bg-blue-700 transition duration-500 ease-in-out bg-blue-500 text-white font-bold py-2 px-4 rounded-md;
+  @apply hover:bg-white hover:text-blue-500 transition duration-100 ease-in-out bg-blue-500 text-white font-bold py-4 px-4;
 }
+
+/*
+  old nav-link apply:
+  @apply hover:bg-blue-700 transition duration-500 ease-in-out bg-blue-500 text-white font-bold py-4 px-4;
+*/
