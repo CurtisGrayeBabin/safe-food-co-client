@@ -11,6 +11,8 @@ module.exports = {
   },
   variants: {
     extend: {
+      textColor: ['active','responsive'],
+      backgroundColor: ['active'],
       transitionProperty: ['hover', 'focus', 'responsive', 'motion-safe', 'motion-reduce'],
       transform: ['motion-safe','hover', 'focus'],
       animation: ['motion-safe'],
