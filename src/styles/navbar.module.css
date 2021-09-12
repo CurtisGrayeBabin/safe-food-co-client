@@ -15,11 +15,11 @@
     flex: 1 0 0;
 }
 
-.right-info {
+.nav-logo {
     text-align: center;
 }
 
-.nav-logo {
+.right-info {
     text-align: center;
 }
   
@@ -35,4 +35,14 @@
     @apply inline-block active:bg-white active:text-blue-500 lg:hover:bg-white lg:hover:text-blue-500 transition duration-200 ease-in-out bg-blue-500 text-white font-bold py-4 px-4;
 }
 
+/* Hide left and right Navbar content on smaller devices */
+@media only screen and (max-width: 800px) {
+    .nav-logo {
+        display: none;
+    }
+    
+    .right-info {
+        display: none;
+    }
+}
 
