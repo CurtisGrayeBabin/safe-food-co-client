@@ -1,7 +1,5 @@
 import * as React from 'react'
-import {
-  container,
-} from '../styles/layout.module.css'
+import { container } from '../styles/layout.module.css'
 import Navbar from './navbar'
 
 const Layout = ({ pageTitle, children }) => {

@@ -1,31 +1,39 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 import {
-  navLinks,
-  navLinkItem,
-  navLink,
-  navbar
-} from '../styles/layout.module.css'
+    rightInfo,
+    navText,
+    navLinks,
+    navLogo,
+    navbar,
+} from '../styles/navbar.module.css'
 import Headroom from 'react-headroom'
+import companyName from '../business/business-logic'
+import { servingMessage } from '../business/business-logic'
 
 const Navbar = () => {
-  return (
-    <Headroom>
-        <nav className={navbar}>
-            <ul className={navLinks}>
-                <li className={navLinkItem}>
-                    <Link to="/" className={navLink}>Home</Link>
-                </li>
-                <li className={navLinkItem}>
-                    <Link to="/about" className={navLink}>About</Link>
-                </li>
-                <li className={navLinkItem}>
-                    <Link to="/contact" className={navLink}>Contact</Link>
-                </li>
-            </ul>
-        </nav>
-    </Headroom>
-  )
+
+    return (
+        <Headroom>
+            <nav className={navbar}>
+
+                <div className={navLogo}>
+                    <span className={navText}>{companyName}</span>
+                </div>
+
+                <div className={navLinks}>
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/contact">Contact</Link>
+                </div>
+
+                <div className={rightInfo}>
+                    <span className={navText}>{servingMessage}</span>
+                </div>
+
+            </nav>
+        </Headroom>
+    )
 }
 
 export default Navbar
