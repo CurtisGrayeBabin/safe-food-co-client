@@ -6,21 +6,17 @@
     @apply shadow bg-blue-500;
 }
 
-.nav-text {
-    @apply text-white font-bold;
-}
-
 /* Centering 3 main divs of the Navbar */
 .navbar > div {
     flex: 1 0 0;
 }
 
 .nav-logo {
-    text-align: center;
+    @apply transform lg:hover:scale-110 transition duration-500 ease-in-out text-center text-white text-3xl font-sans;
 }
 
 .right-info {
-    text-align: center;
+    @apply transform lg:hover:scale-110 transition duration-500 ease-in-out text-center text-white text-xl font-sans;
 }
   
 .nav-links {

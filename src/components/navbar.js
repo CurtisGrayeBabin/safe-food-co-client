@@ -2,7 +2,6 @@ import * as React from 'react'
 import { Link } from 'gatsby'
 import {
     rightInfo,
-    navText,
     navLinks,
     navLogo,
     navbar,
@@ -10,6 +9,7 @@ import {
 import Headroom from 'react-headroom'
 import companyName from '../business/business-logic'
 import { servingMessage } from '../business/business-logic'
+import PinDropIcon from '@material-ui/icons/PinDrop';
 
 const Navbar = () => {
 
@@ -18,7 +18,7 @@ const Navbar = () => {
             <nav className={navbar}>
 
                 <div className={navLogo}>
-                    <span className={navText}>{companyName}</span>
+                    <span>{companyName}</span>
                 </div>
 
                 <div className={navLinks}>
@@ -28,7 +28,8 @@ const Navbar = () => {
                 </div>
 
                 <div className={rightInfo}>
-                    <span className={navText}>{servingMessage}</span>
+                    <span>{servingMessage}</span>&nbsp;
+                    <PinDropIcon />
                 </div>
 
             </nav>
