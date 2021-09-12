@@ -7,6 +7,7 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <>
         <title>{pageTitle}</title>
+
         <Helmet>
           <meta charSet="utf-8" />
           <title>{pageTitle}</title>
@@ -14,12 +15,11 @@ const Layout = ({ pageTitle, children }) => {
         </Helmet>
         
         <Navbar></Navbar>
-        <div className={container}>
-            <main>
-                {/*<h1 className={heading}>{pageTitle}</h1>*/}
-                {children}
-            </main>
-        </div>
+        
+        <main className={container}>
+          {/*<h1 className={heading}>{pageTitle}</h1>*/}
+          {children}
+        </main>
     </>
   )
 }

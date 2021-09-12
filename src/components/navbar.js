@@ -9,7 +9,7 @@ import {
 import Headroom from 'react-headroom'
 import companyName from '../business/business-logic'
 import { servingMessage } from '../business/business-logic'
-import PinDropIcon from '@material-ui/icons/PinDrop';
+import PinDropIcon from '@material-ui/icons/PinDrop'
 
 const Navbar = () => {
 
