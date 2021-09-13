@@ -13,9 +13,10 @@ const IndexPage = () => {
   return (
     <Layout pageTitle='Home'>
 
-      <h1 className={bigText}>{companyName}</h1>
-
-      <h2 className={taglineText}>Offering ServSafe exam proctoring!</h2>
+      <section>
+        <h1 className={bigText}>{companyName}</h1>
+        <h2 className={taglineText}>Offering ServSafe exam proctoring!</h2>
+      </section>
       
       <StaticImage src='../images/servsafe_logo.png' alt='ServSafe logo image' width={300}/>
 
