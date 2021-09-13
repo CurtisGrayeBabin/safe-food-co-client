@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { container } from '../styles/layout.module.css'
 import Navbar from './navbar'
-import { Helmet } from "react-helmet"
+import { Helmet } from 'react-helmet'
 
 const Layout = ({ pageTitle, children }) => {
   return (

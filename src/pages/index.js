@@ -1,12 +1,12 @@
 import * as React from 'react'
 import Layout from '../components/layout'
-import { StaticImage } from "gatsby-plugin-image"
 import companyName from '../business/business-logic'
 import { 
   bigText,
   taglineText,
   textBg
 } from '../styles/text.module.css'
+import { ServSafeImg } from '../components/images'
 import DoneOutlineIcon from '@material-ui/icons/DoneOutline';
 
 const IndexPage = () => {
@@ -18,7 +18,7 @@ const IndexPage = () => {
         <h2 className={taglineText}>Offering ServSafe exam proctoring!</h2>
       </section>
       
-      <StaticImage src='../images/servsafe_logo.png' alt='ServSafe logo image' width={300}/>
+      <ServSafeImg/>
 
       <section className={textBg}>
           <div>
