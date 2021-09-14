@@ -6,6 +6,10 @@
     @apply text-2xl italic;
 }
 
+.standard-text {
+    @apply text-xl;
+}
+
 /* Green rounded "bubble" text */
 .text-bg {
     @apply text-left bg-green-50 w-72 m-auto rounded-xl border-double border-2 border-green-400 shadow-lg;

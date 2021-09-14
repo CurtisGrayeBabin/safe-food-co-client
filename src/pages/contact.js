@@ -1,8 +1,11 @@
 import * as React from 'react'
 import Layout from '../components/layout'
+
 import {
-  bigText
+  bigText,
+  standardText
 } from '../styles/text.module.css'
+
 import {
   phone,
   email,
@@ -18,6 +21,9 @@ import BusinessOutlinedIcon from '@material-ui/icons/BusinessOutlined';
 const ContactPage = () => {
 
   const emailHref=`mailto: ${emailAddress}` 
+  const phoneHref=`tel: ${phoneNumber}` 
+
+  const iconStyle = { fontSize: 40, 'paddingBottom':'10px' }
 
   return (
     <Layout pageTitle='Contact'>
@@ -25,15 +31,15 @@ const ContactPage = () => {
       <section>
         <div className={sameLine}>
           <h1 className={bigText}>Call us</h1>
-          <PhoneInTalkOutlinedIcon style={{ fontSize: 40, 'paddingBottom':'10px' }}/>
+          <PhoneInTalkOutlinedIcon style={iconStyle}/>
         </div>
-        <a href="tel:+19096440245" className={phone}>{phoneNumber}</a>
+        <a href={phoneHref} className={phone}>{phoneNumber}</a>
       </section>
 
       <section>
         <div className={sameLine}>
           <h1 className={bigText}>Email us</h1>
-          <EmailOutlinedIcon style={{ fontSize: 40, 'paddingBottom':'10px' }}/>
+          <EmailOutlinedIcon style={iconStyle}/>
         </div>
         <a href={emailHref} className={email}>{emailAddress}</a>
       </section>
@@ -41,9 +47,9 @@ const ContactPage = () => {
       <section>
         <div className={sameLine}>
           <h1 className={bigText}>Location</h1>
-          <BusinessOutlinedIcon style={{ fontSize: 40, 'paddingBottom':'10px' }}/>
+          <BusinessOutlinedIcon style={iconStyle}/>
         </div>
-        <p>{location}</p>
+        <p className={standardText}>{location}</p>
       </section>
 
     </Layout>
