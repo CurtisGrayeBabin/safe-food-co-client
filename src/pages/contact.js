@@ -1,17 +1,51 @@
 import * as React from 'react'
 import Layout from '../components/layout'
+import {
+  bigText
+} from '../styles/text.module.css'
+import {
+  phone,
+  email,
+  sameLine
+} from '../styles/contact.module.css'
+
+import { phoneNumber, emailAddress, location } from '../business/business-logic'
+
+import PhoneInTalkOutlinedIcon from '@material-ui/icons/PhoneInTalkOutlined';
+import EmailOutlinedIcon from '@material-ui/icons/EmailOutlined';
+import BusinessOutlinedIcon from '@material-ui/icons/BusinessOutlined';
 
 const ContactPage = () => {
+
+  const emailHref=`mailto: ${emailAddress}` 
+
   return (
     <Layout pageTitle='Contact'>
-      <h1>Call us:</h1>
-      <p>(909) 644-0245</p>
-      
-      <h1>Email us:</h1>
-      <p>danny.babin@hotmail.com</p>
 
-      <h1>Location:</h1>
-      <p>11864 Bunting Cir. Corona 92883</p>
+      <section>
+        <div className={sameLine}>
+          <h1 className={bigText}>Call us</h1>
+          <PhoneInTalkOutlinedIcon style={{ fontSize: 40, 'paddingBottom':'10px' }}/>
+        </div>
+        <a href="tel:+19096440245" className={phone}>{phoneNumber}</a>
+      </section>
+
+      <section>
+        <div className={sameLine}>
+          <h1 className={bigText}>Email us</h1>
+          <EmailOutlinedIcon style={{ fontSize: 40, 'paddingBottom':'10px' }}/>
+        </div>
+        <a href={emailHref} className={email}>{emailAddress}</a>
+      </section>
+    
+      <section>
+        <div className={sameLine}>
+          <h1 className={bigText}>Location</h1>
+          <BusinessOutlinedIcon style={{ fontSize: 40, 'paddingBottom':'10px' }}/>
+        </div>
+        <p>{location}</p>
+      </section>
+
     </Layout>
   )
 }

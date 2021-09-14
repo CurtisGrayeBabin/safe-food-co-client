@@ -1,0 +1,17 @@
+.phone {
+    @apply lining-nums text-xl text-blue-500;
+}
+
+.call-us {
+
+}
+
+.same-line > * {
+    display: inline-block;
+}
+
+.email {
+    @apply text-xl text-blue-500;
+}
+
+
