@@ -18,8 +18,12 @@ const IndexPage = () => {
         <h2 className={taglineText}>Offering ServSafe exam proctoring!</h2>
       </section>
       
-      <ServSafeImg/>
+      {/* Images */}
+      <section>
+        <ServSafeImg />
+      </section>
 
+      {/* Green text section with checkmarks */}
       <section className={textBg}>
           <div>
             <h3>Individuals and Groups</h3>

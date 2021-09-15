@@ -1,6 +1,10 @@
 .container {
-  margin: 20px auto auto auto;
+  margin: auto auto auto auto;
   max-width: 80%;
   font-family: sans-serif;
   text-align: center;
+}
+
+section {
+  margin: 0px 0px 20px 0;
 }
