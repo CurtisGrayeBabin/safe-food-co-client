@@ -1,11 +1,14 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import { ServSafeImg, ACFImg } from '../components/images'
+import {
+  bigText
+} from '../styles/text.module.css'
 
 const AboutPage = () => {
   return (
     <Layout pageTitle='About'>
-      <h1>About us</h1>
+      <h1 className={bigText}>About us</h1>
       
       <h2>Certified: Certified Instructor and Proctor for ServSafe</h2>
       
